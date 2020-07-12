@@ -59,12 +59,21 @@ export default class Modal extends Component {
           </MDBModalBody>
           <MDBModalBody>
             Tagline : <br /> <br />
-            {this.state.details.tagline}
+            {this.state.details.tagline === ""
+              ? "No tagline"
+              : this.state.details.tagline}
             <hr />
           </MDBModalBody>
           <MDBModalBody>
             HomePage : <br /> <br />
-            {this.state.details.homepage ? "" : "No homepage"}
+            {this.state.details.homepage === ""
+              ? "No homepage"
+              : this.state.details.homepage}
+            <hr />
+          </MDBModalBody>
+          <MDBModalBody>
+            For adults : <br /> <br />
+            {this.state.details.adults === false ? "No" : "Yes"}
           </MDBModalBody>
 
           <MDBModalFooter>
