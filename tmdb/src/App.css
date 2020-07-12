@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.singleMovie {
+  text-align: justify;
+  display: grid;
+  margin: 0 auto;
+}
+
+.loader {
+  clear: both;
+  font-size: x-large;
+}
+
+.movies {
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: inline;
+}
+
+.title {
+  font-size: medium;
+}
