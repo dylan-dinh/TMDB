@@ -33,6 +33,8 @@ export default class Modal extends Component {
     tmdb.fetchMovieDetails(id).then((resp, err) => {
       if (resp) {
         self.state.details = resp;
+      } else {
+        console.error("error querying TMDB");
       }
     });
   }
